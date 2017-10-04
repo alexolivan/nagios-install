@@ -60,6 +60,7 @@ echo "OK"
 echo ""
 echo ""
 echo "We now create the 'nagios' user."
+echo "you'll be propmpt for a password..."
 useradd -m ${NAGIOSUSER}
 passwd ${NAGIOSUSER}
 echo ""
@@ -74,7 +75,7 @@ echo ""
 echo "OK"
 echo ""
 echo ""
-echo "O...downloading nagios-core 4..."
+echo "...downloading nagios-core 4..."
 wget https://assets.nagios.com/downloads/nagioscore/releases/${NAGIOSCOREVERSION}.tar.gz -O /usr/src/${NAGIOSCOREVERSION}.tar.gz
 echo ""
 echo "OK"
